@@ -17,5 +17,7 @@ WORKDIR /app
 
 COPY movie.sh /app
 
-ENV AWS_ACCESS_KEY_ID="***" \ AWS_SECRET_ACCESS_KEY="***"  \ AWS_DEFAULT_REGION="us-west-2"
+RUN chmod 700 movie.sh
+
+ENV AWS_ACCESS_KEY_ID="***" \AWS_SECRET_ACCESS_KEY="***"  \AWS_DEFAULT_REGION="us-west-2"
 

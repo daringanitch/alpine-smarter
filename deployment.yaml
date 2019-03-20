@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: alpine-smarter-v2
+  namespace: default
+  labels:
+    app: alpine-smarter-v2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: alpine-smarter-v2
+  template:
+    metadata:
+      labels:
+	app: alpine-smarter-v2
+    spec:
+      containers:
+      - name: alpine-smarter-v2
+        image: dganitch/alpine-smarter-v2

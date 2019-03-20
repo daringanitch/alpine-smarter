@@ -13,7 +13,7 @@ spec:
   template:
     metadata:
       labels:
-	app: alpine-smarter-v2
+        app: alpine-smarter-v2
     spec:
       containers:
       - name: alpine-smarter-v2

@@ -4,7 +4,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: alpine-smarter-v2
+      tag: dganitch/alpine-smarter-v2
       pushRemote: true
       registry: index.docker.io
 timeout: 60

@@ -1,4 +1,3 @@
-
 FROM alpine:3.8
 
 MAINTAINER Darin Ganitch dganitch@gmail.com
@@ -19,5 +18,4 @@ COPY movie.sh /app
 
 RUN chmod 700 movie.sh
 
-ENV AWS_ACCESS_KEY_ID="***" \AWS_SECRET_ACCESS_KEY="***"  \AWS_DEFAULT_REGION="us-west-2"
-
+ENV AWS_ACCESS_KEY_ID="***" \AWS_SECRET_ACCESS_KEY="***" \AWS_DEFAULT_REGION="us-west-2"

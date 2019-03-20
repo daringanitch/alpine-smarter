@@ -17,4 +17,4 @@ spec:
     spec:
       containers:
       - name: alpine-smarter-v2
-        image: dganitch/alpine-smarter-v2
+        image: dganitch/alpine-smarter-v2:latest
